@@ -1,0 +1,197 @@
+:root{
+    --primary:#2563eb;
+    --secondary:#1e293b;
+    --background:#f8fafc;
+    --card:#ffffff;
+    --text:#222;
+    --shadow:0 10px 25px rgba(0,0,0,.1);
+    --radius:15px;
+}
+
+@media (prefers-color-scheme: dark){
+
+:root{
+    --background:#111827;
+    --card:#1f2937;
+    --text:#f5f5f5;
+    --secondary:#0f172a;
+}
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI,sans-serif;
+background:var(--background);
+color:var(--text);
+line-height:1.6;
+}
+
+/* Header */
+
+header{
+background:var(--primary);
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+header h1{
+color:white;
+}
+
+/* Navigation */
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* Main Grid */
+
+main{
+width:90%;
+margin:auto;
+padding:40px 0;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+/* Cards */
+
+section{
+background:var(--card);
+padding:30px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+transition:.3s;
+}
+
+section:hover{
+transform:translateY(-8px);
+}
+
+article{
+margin-top:20px;
+padding:20px;
+background:#eef4ff;
+border-left:5px solid var(--primary);
+border-radius:10px;
+}
+
+/* Contact Form */
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+input:focus,
+textarea:focus{
+outline:none;
+border:2px solid var(--primary);
+}
+
+/* Button */
+
+button{
+padding:15px;
+background:var(--primary);
+color:white;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#0f52d8;
+transform:scale(1.03);
+}
+
+/* Footer */
+
+footer{
+background:var(--secondary);
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+margin-top:15px;
+}
+
+main{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(min-width:769px){
+
+main{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(min-width:1100px){
+
+main{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+img{
+max-width:100%;
+display:block;
+border-radius:10px;
+}
+
+html{
+scroll-behavior:smooth;
+}
