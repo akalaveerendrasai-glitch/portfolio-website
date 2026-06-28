@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | E-Commerce Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        <h2>🛒 ShopEase</h2>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#products">Products</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <h1>Welcome to ShopEase</h1>
+
+        <p>
+
+            Buy the latest Electronics,
+            Fashion, Shoes and Accessories
+            at the best prices.
+
+        </p>
+
+        <a href="#products" class="btn">
+
+            Shop Now
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products" id="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="filter-buttons">
+
+    <button class="filter active" data-category="all">All</button>
+
+    <button class="filter" data-category="electronics">Electronics</button>
+
+    <button class="filter" data-category="shoes">Shoes</button>
+
+    <button class="filter" data-category="fashion">Fashion</button>
+
+    <button class="filter" data-category="accessories">Accessories</button>
+
+</div>
+
+
+   <div class="product-grid">
+
+<div class="card" data-category="electronics">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60" alt="Wireless Headphones"><h3>Wireless Headphones</h3>
+<p>₹1999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="electronics">
+<img src="https://images.unsplash.com/photo-1589003077984-894e133dabab?w=500&auto=format&fit=crop&q=60">
+<h3>Bluetooth Speaker</h3>
+<p>₹1499</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="electronics">
+<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500&auto=format&fit=crop&q=60">
+<h3>Smart Watch</h3>
+<p>₹2999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="electronics">
+<img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&auto=format&fit=crop&q=60">
+<h3>Gaming Mouse</h3>
+<p>₹999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="shoes">
+ <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60" alt="Running Shoes"><h3>Running Shoes</h3>
+<p>₹2499</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="shoes">
+<img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&auto=format&fit=crop&q=60">
+<h3>Sneakers</h3>
+<p>₹2799</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="fashion">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&auto=format&fit=crop&q=60" alt="Denim Jacket">
+<h3>Denim Jacket</h3>
+<p>₹1899</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="fashion">
+        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&auto=format&fit=crop&q=60" alt="Casual Shirt">
+<h3>Casual Shirt</h3>
+<p>₹999</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="fashion">
+        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&auto=format&fit=crop&q=60" alt="Hoodie">
+<h3>Hoodie</h3>
+<p>₹1599</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="accessories">
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&auto=format&fit=crop&q=60" alt="Leather Backpack">
+<h3>Leather Backpack</h3>
+<p>₹2199</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="accessories">
+<img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&auto=format&fit=crop&q=60" alt="Travel Bag"><h3>Travel Bag</h3>
+<p>₹2599</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card" data-category="accessories">
+        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&auto=format&fit=crop&q=60" alt="Sunglasses">
+<h3>Sunglasses</h3>
+<p>₹799</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<h2>About Us</h2>
+
+<p>
+
+ShopEase is a simple E-Commerce Product Catalog
+developed using HTML, CSS and JavaScript.
+
+This project demonstrates
+
+Responsive Design,
+
+Shopping Cart,
+
+Local Storage,
+
+Search,
+
+Filter,
+
+and Client-side Navigation.
+
+</p>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+Developed by Akala Veerendra Sai
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
